@@ -1,0 +1,21 @@
+DSIKUSI
+1. Apa kelebihan dan kelemahan DQN dibandingkan metode Q-Learning klasik?
+DQN menawarkan beberapa keunggulan signifikan dibandingkan Q-learning tradisional, terutama dalam menangani masalah yang lebih kompleks, berikut beberapa kekurangan dan kelebihan dibandingkan dengan Q-Learning klasik:
+
+-Kekurangan
+A.Waktu pelatihan tergolong lambat
+B.Memiliki Kompleksitas yang lebih tinggi dibandingkan dengan Q-Learning
+C.Butuh data dan pelatihan lebih banyak.
+
+-Keunggulan
+A.memungkinkan DQN untuk menangani masalah dengan ruang state yang sangat besar, bahkan kontinu.
+B.DQN dapat melakukan generalisasi, yaitu menerapkan pengetahuan yang dipelajari dari satu state ke state lain yang serupa.
+C.- Cocok untuk kontrol sistem dinamis yang kompleks
+
+
+Bagaimana cara mengadaptasi DQN untuk kontrol sistem dinamis seperti drone atau robot industri?
+Deep Q-Network (DQN) adalah terobosan dalam reinforcement learning, menggabungkan deep learning untuk mengatasi keterbatasan Q-learning, sehingga mampu menangani ruang status yang besar dan kompleks,dan juga DQN dapat melakukan generalisasi antar status yang mirip, menjadikannya lebih cocok untuk sistem dinamis seperti drone atau robot industri. Untuk mmengimplementasikan DQN untuk kontrol sistem dinamis, terdapat beberapa langlah yang dilakuan, langkah pertama adalah mendefinisikan status dan aksi secara tepat,langkah selanjutnya adalah melakukan pelatihan karena DQN rentan terhadap ketidakstabilan pelatihan, teknik seperti Double DQN, Dueling DQN, dan Experience Replay perlu diterapkan untuk meningkatkan akurasi dan konvergensi, setelah itu dapat di integrasikan dengan sistem industri bisa dilakukan melalui framework seperti ROS, dengan dukungan sensor fusion dan inference real-time untuk memastikan respons yang cepat dan akurat.
+
+ANALISI
+Melakukan Modifikasi kode DQN pengendalian lengan robot
+Dalam konteks pengendalian lengan robot, metode hand detection dengan MediaPipe berperan sebagai sistem persepsi yang menangkap posisi serta pergerakan tangan manusia melalui deteksi landmark pada citra kamera. Data berupa koordinat 21 titik sendi tangan ini dapat diproses lebih lanjut untuk merepresentasikan state dalam kerangka pembelajaran penguatan (reinforcement learning).
